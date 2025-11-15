@@ -5,6 +5,7 @@ from langchain_openai import ChatOpenAI
 
 load_dotenv()
 
+
 def main():
     print("Hello from langchain-course!")
     information = """
@@ -35,6 +36,7 @@ def main():
 
     response = chain.invoke(input={"information": information})
     print(response.content)
+
 
 if __name__ == "__main__":
     main()
